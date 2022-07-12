@@ -26,4 +26,4 @@
 #   }
 # Learn more at: https://puppet.com/docs/bolt/0.x/writing_tasks.html#ariaid-title11
 #
-Write-host "This is a placeholder to show output from task run."
+Write-host "This is a placeholder to show output from task run. Feature A deployed"
