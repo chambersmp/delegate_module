@@ -22,6 +22,7 @@
 #     jq:
 #       ensure: 1.6.0
 #
+#
 class delegate_module::packages (
   Hash $package_list = {},
 ) {
