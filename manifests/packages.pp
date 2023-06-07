@@ -32,7 +32,7 @@ class delegate_module::packages (
         ensure => present,
         ;
       $package:
-        * => pick($package_opts,{}),
+        * => pick($package_opts, {}),
     }
   }
 }
