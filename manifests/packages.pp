@@ -12,7 +12,8 @@
 #     }
 #   }
 #
-# @example Use Hiera APL 
+# @example Use Hiera common.yaml and Class Auto-Param Lookup (APL) to set common values (defaults).
+#   Result: All nodes that include this class will get jq installed at 1.6.0
 #   include "delegate_module::packages"
 #
 #   data/common.yaml 
