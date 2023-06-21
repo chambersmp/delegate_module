@@ -5,5 +5,5 @@
 # @example
 #   include delegate_module::files
 class delegate_module::files {
-  notify { 'Test main': }
+  notify { 'Test development': }
 }
