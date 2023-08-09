@@ -3,4 +3,6 @@
 ---
 fixtures:
   forge_modules:
-#     stdlib: "puppetlabs/stdlib"
+    sslcertificate: "puppet/sslcertificate"
+    stdlib: "puppetlabs/stdlib"
+
