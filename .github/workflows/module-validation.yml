@@ -1,0 +1,29 @@
+name: module-linting
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+    
+defaults:
+  run:
+    shell: bash
+jobs:
+  pdk-validate:
+    runs-on: self-hosted
+    container:
+      image: puppet/puppet-dev-tools:4.x
+      volumes:
+        - /home/ec2-user/actions-runner/_work/control-repo/control-repo:/repo
+    steps:
+      - name: Check Templates
+        run: (pdk validate --parallel)
+  unit-tests:
+    runs-on: self-hosted
+    container:
+      image: puppet/puppet-dev-tools:4.x
+      volumes:
+        - /home/ec2-user/actions-runner/_work/control-repo/control-repo:/repo
+    steps:
+      - name: Check Manifests
+        run: (pdk test unit)
